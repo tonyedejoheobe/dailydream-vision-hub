@@ -56,7 +56,7 @@ const About = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-border shadow-card hover:shadow-luxury transition-all duration-300 hover:scale-105 animate-fade-in">
+            <Card className="border-border shadow-card hover:shadow-luxury transition-all duration-500 hover:scale-105 animate-fade-in hover:-translate-y-2">
               <CardContent className="p-10 text-center">
                 <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-6">
                   <Target className="w-10 h-10 text-gold" />
@@ -69,7 +69,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-border shadow-card hover:shadow-luxury transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <Card className="border-border shadow-card hover:shadow-luxury transition-all duration-500 hover:scale-105 animate-fade-in hover:-translate-y-2" style={{ animationDelay: "0.1s" }}>
               <CardContent className="p-10 text-center">
                 <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-6">
                   <Eye className="w-10 h-10 text-gold" />
@@ -82,7 +82,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-border shadow-card hover:shadow-luxury transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <Card className="border-border shadow-card hover:shadow-luxury transition-all duration-500 hover:scale-105 animate-fade-in hover:-translate-y-2" style={{ animationDelay: "0.2s" }}>
               <CardContent className="p-10 text-center">
                 <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-6">
                   <Sparkles className="w-10 h-10 text-gold" />

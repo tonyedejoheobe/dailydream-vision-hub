@@ -75,7 +75,7 @@ const Home = () => {
                 asChild 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-navy-dark px-8 py-6 text-lg transition-all"
+                className="border-2 border-white/90 text-white hover:bg-white hover:text-navy-dark px-8 py-6 text-lg transition-all hover:scale-105 backdrop-blur-sm"
               >
                 <Link to="/services">Explore Services</Link>
               </Button>
@@ -100,7 +100,7 @@ const Home = () => {
             {benefits.map((benefit, index) => (
               <Card 
                 key={index} 
-                className="border-border shadow-card hover:shadow-luxury transition-all duration-300 hover:scale-105 animate-scale-in group"
+                className="border-border shadow-card hover:shadow-luxury transition-all duration-500 hover:scale-105 animate-scale-in group hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-8">

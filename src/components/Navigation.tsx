@@ -46,7 +46,7 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button asChild variant="default" className="ml-4 bg-gradient-to-r from-gold-dark to-gold hover:shadow-gold transition-all">
+            <Button asChild variant="default" className="ml-4 bg-gradient-to-r from-gold-dark to-gold hover:shadow-gold transition-all hover:scale-105 text-navy-dark font-semibold">
               <Link to="/contact">Get Started</Link>
             </Button>
           </div>
@@ -78,7 +78,7 @@ const Navigation = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button asChild className="mt-2 bg-gradient-to-r from-gold-dark to-gold">
+              <Button asChild className="mt-2 bg-gradient-to-r from-gold-dark to-gold text-navy-dark font-semibold">
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   Get Started
                 </Link>

@@ -54,7 +54,7 @@ const Team = () => {
             {teamMembers.map((member, index) => (
               <Card
                 key={index}
-                className="border-border shadow-card hover:shadow-luxury transition-all duration-300 animate-fade-in group"
+                className="border-border shadow-card hover:shadow-luxury transition-all duration-500 animate-fade-in group hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <CardContent className="p-8 md:p-10">
@@ -62,11 +62,15 @@ const Team = () => {
                     {/* Circular Image */}
                     <div className="relative mb-6">
                       <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold to-gold-dark opacity-20 blur-xl group-hover:opacity-40 transition-opacity" />
-                      <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-gold/30 shadow-gold group-hover:scale-105 transition-transform">
+                      <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-gold/30 shadow-gold group-hover:scale-105 transition-transform duration-500">
                         <img
                           src={member.image}
-                          alt={member.name}
-                          className={`w-full h-full object-cover ${member.name === "Abdullahi Amina" ? "object-top" : ""}`}
+                          alt={`${member.name} - ${member.role} at DAILYDREAM`}
+                          className={`w-full h-full object-cover ${
+                            member.name === "Abdullahi Amina" ? "object-top" : 
+                            member.name === "Mr. Tony Ede" ? "object-center scale-110" : 
+                            "object-center"
+                          }`}
                         />
                       </div>
                     </div>
