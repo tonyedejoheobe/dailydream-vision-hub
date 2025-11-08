@@ -23,12 +23,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative w-10 h-10 transition-transform group-hover:scale-110 group-hover:rotate-180 duration-500">
+            <div className="relative w-11 h-11 transition-transform group-hover:scale-110 duration-500">
               {/* Outer ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-gold/50 animate-pulse"></div>
-              {/* Inner geometric design */}
+              <div className="absolute inset-0 rounded-full border-2 border-gold/50 group-hover:border-gold transition-colors duration-300"></div>
+              {/* Inner gradient background */}
               <div className="absolute inset-1 bg-gradient-to-br from-gold to-gold-dark rounded-full shadow-gold flex items-center justify-center">
-                <div className="w-5 h-5 border-2 border-navy-dark rotate-45 bg-navy-dark/20"></div>
+                <span className="text-navy-dark font-bold text-lg tracking-tighter">DD</span>
               </div>
             </div>
             <span className="text-2xl font-bold text-white tracking-tight">
